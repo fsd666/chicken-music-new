@@ -1,0 +1,97 @@
+/**
+ * File: global.scss
+ * Project: chicken-music
+ * File Created: Tuesday, 20th August 2019 10:52:32 am
+ * Author: Lenovo
+ * Description: 全局样式定义
+ * -----
+ * Last Modified: Sunday, 10th November 2019 1:51:26 pm
+ * Modified By: Fan
+ * -----
+ * Copyright 2017 - 2019 Your Company, Your Company
+ */
+
+@charset 'utf-8';
+$text-color: #fff; // 默认字体颜色
+$yellow-color: #ffcd32;
+$black-color: #222;
+$gray-color: #333;
+$transparent-color: hsla(0, 0%, 100%, 0.3);
+/* ------------------------ 字体大小定义 ------------------------ */
+$font-sizes: (
+  attention: 68px,
+  huge: 56px,
+  large: 40px,
+  big: 36px,
+  normal: 32px,
+  medium: 28px,
+  small: 26px,
+  tiny: 24px,
+  mini: 22px
+);
+// 68px
+$font-size-attention: map-get($font-sizes, attention);
+// 56px
+$font-size-huge: map-get($font-sizes, huge);
+// 40px
+$font-size-large: map-get($font-sizes, large);
+// 36px
+$font-size-big: map-get($font-sizes, big);
+// 32px
+$font-size-normal: map-get($font-sizes, normal);
+// 28px
+$font-size-medium: map-get($font-sizes, medium);
+// 26px
+$font-size-small: map-get($font-sizes, small);
+// 24px
+$font-size-tiny: map-get($font-sizes, tiny);
+// 22px
+$font-size-mini: map-get($font-sizes, mini);
+/* ------------------------ 字体加粗定义 ------------------------ */
+$font-weights: (
+  b: bold,
+  n: normal
+);
+// bold等同于700
+$font-weight-s: map-get($font-weights, b);
+// normal等同于400
+$font-weight-r: map-get($font-weights, n);
+
+/* -------------- 单行文字溢出时出现省略号，需设定宽度 -------------- */
+%fn-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* -------------- 在父元素上清除浮动 -------------- */
+%fn-clearFloat:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.slide-enter-active {
+  animation: enter 0.3s;
+}
+.slide-leave-active {
+  animation: leave 0.3s;
+}
+/* -------------- 路由动画 -------------- */
+@keyframes enter {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes leave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

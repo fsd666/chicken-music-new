@@ -1,0 +1,20 @@
+/**
+ * File: main.scss
+ * Project: chicken-music
+ * File Created: Monday, 26th August 2019 5:03:35 pm
+ * Author: Lenovo
+ * Description: 全局样式集合
+ * -----
+ * Last Modified: Monday, 4th November 2019 11:12:15 pm
+ * Modified By: Fan
+ * -----
+ * Copyright 2017 - 2019 Your Company, Your Company
+ */
+@charset 'utf8';
+
+// 应用基础样式定义
+@import "./common.scss";
+// 应用全局样式定义
+@import "./global.scss";
+// 应用全局的混合设置
+@import "./mixins.scss";

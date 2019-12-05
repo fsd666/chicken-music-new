@@ -1,0 +1,54 @@
+{
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended",
+        "@vue/standard"
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "no-new": "error",
+        "no-debugger": "error",
+        "no-console": "off",
+        "no-inner-declarations": "off",
+        "new-parens": "error",
+        "eqeqeq": "error",
+        "no-trailing-spaces": "off",
+        "eol-last": "off",
+        "no-useless-return": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-magic-numbers": [
+            "off",
+            {
+                "ignore": [
+                    0,
+                    1,
+                    -1
+                ]
+            }
+        ],
+        "no-floating-decimal": "error",
+        "no-fallthrough": "error",
+        "no-else-return": "off",
+        "guard-for-in": "error",
+        "space-before-function-paren": "off",
+        "quotes": "off",
+        "no-case-declarations": "off"
+    }
+}

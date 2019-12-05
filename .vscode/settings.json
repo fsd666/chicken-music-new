@@ -1,0 +1,69 @@
+{
+    "psi-header.lang-config": [
+        {
+            "language": "javascript",
+            "begin": "/**",
+            "prefix": " * ",
+            "end": " */",
+            "blankLinesAfter": 2,
+            "forceToTop": true
+        },
+        {
+            "language": "vue",
+            "begin": "<!--",
+            "prefix": " * ",
+            "end": " -->",
+            "blankLinesAfter": 2,
+            "forceToTop": true
+        },
+        {
+            "language": "scss",
+            "begin": "/**",
+            "prefix": " * ",
+            "end": " */",
+            "blankLinesAfter": 2,
+            "forceToTop": true
+        }
+    ],
+    "psi-header.variables": [
+        [
+            "projectCreationYear",
+            "2017"
+        ]
+    ],
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "File: <<filename>>",
+                "Project: <<projectname>>",
+                "File Created: <<filecreated('dddd, Do MMMM YYYY h:mm:ss a')>>",
+                "Author: <<author>>",
+                "Description: ",
+                "-----",
+                "Last Modified: <<dateformat('dddd, Do MMMM YYYY h:mm:ss a')>>",
+                "Modified By: <<author>>",
+                "-----",
+                "Copyright <<projectCreationYear>> - <<year>> <<copyrightholder>>, <<company>>"
+            ]
+        }
+    ],
+    "psi-header.changes-tracking": {
+        "isActive": true,
+        "modAuthor": "Modified By: ",
+        "modDate": "Last Modified: ",
+        "modDateFormat": "date",
+        "autoHeader": "manualSave",
+        "include": [
+            "javascript",
+            "vue",
+            "css",
+            "scss"
+        ]
+    },
+    "eslint.autoFixOnSave": true,
+    "editor.detectIndentation": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.options.tabSize": 4
+}
